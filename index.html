@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <h1>Tip Calculator</h1>
+    <div class="container">
+        <form>
+            <p id="bill">Bill Amount</p>
+            <input class="amount" id="bill-amt margin" type="tel" placeholder="Amount to be paid">₹
+            <p id="question margin">How was the service ?</p>
+            <select id="services">
+                <option selected disabled hidden>Select</option>
+                <option value="0.25">25% - Top Notch</option>
+                <option value="0.20">20% - Excellent</option>
+                <option value="0.15">15% - Good</option>
+                <option value="0.10">10% - Bad</option>
+                <option value="0.05">5% - Worst</option>
+            </select>
+            <p id="margin">Total number of persons</p>
+            <input id="person-count" type="text" placeholder="Number of people sharing the bill">
+        </form>
+        <button id="calculate">Calculate</button>
+        <div class="result">
+            <p id="msg"></p>
+            <span id="total"></span>
+            <span id="each"></span>
+        </div>
+        <div class="footer">
+            <p>Made with ❤️ by <a href="https://www.linkedin.com/in/subhajitdash/" target="_blank">Subhajit</a></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
